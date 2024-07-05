@@ -142,6 +142,8 @@ int main() {
 
   for (std::size_t i{0}; i < rows; i++) {
     delete[] game[i];
+    delete[] after[i];
   }
   delete[] game;
+  delete[] after;
 }
